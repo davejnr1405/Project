@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Complex flexbox example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+      }
+        header{
+          background-color: purple;
+          color: #fff;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        section{
+          display: flex;
+        }
+
+        article{
+          background-color: aqua;
+          margin: 10px;
+          padding: 20px;
+        }
+
+        section article:nth-of-type(1){
+          flex: 2;
+        }
+        section article:nth-of-type(2){
+          flex: 2;
+        }
+        section article:nth-of-type(3){
+          flex: 4;
+        }
+        article div button:nth-of-type(5){
+          flex: 5;
+          padding: 5px 40px;
+        }
+
+        article div button{
+          flex: 1 1;
+        }
+
+        button{
+          font-family: 'poppins', sans-serif;
+          padding: 5px 20px;
+          margin: 10px;
+          font-weight: 600;
+
+        }
+
+        article div{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        /* .block{
+          display: block;
+          padding: 50px;
+        } */
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>Complex flexbox example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+
+      <article>
+        <h2>Second article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+
+      <article>
+        <div>
+          <button>Smile</button>
+          <button>Laugh</button>
+          <button>Wink</button>
+          <button>Shrug</button>
+          <button class="block">Blush</button>
+        </div>
+        <div>
+          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+        </div>
+        <div>
+          <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
